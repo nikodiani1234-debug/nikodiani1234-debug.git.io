@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikodiani - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-text">ND</div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top hidden"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Nikodiani</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="animated-bg"></div>
+            <div class="hero-content">
+                <h1>Nikodiani</h1>
+                <p>I'm a <span id="typewriter"></span></p>
+                <p class="intro">
+                    <!-- CUSTOMIZE: Your professional intro paragraph -->
+                    A passionate developer creating modern and responsive web applications. I specialize in full-stack development and love building things for the web.
+                </p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="https://avatars.githubusercontent.com/u/128529374?v=4" alt="Nikodiani" class="profile-photo">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>
+                        <!-- CUSTOMIZE: Your detailed bio -->
+                        I'm a software developer with a passion for creating intuitive and dynamic user experiences. With a background in both front-end and back-end technologies, I enjoy tackling complex problems and turning ideas into reality. When I'm not coding, I enjoy exploring new technologies and contributing to open-source projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Tech Stack</h2>
+            <div class="skills-container">
+                <!-- Skills will be added here, e.g., <div class="skill-badge">...</div> -->
+                <div class="skill-badge"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-badge"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-badge"><i class="fab fa-react"></i> React</div>
+                <div class="skill-badge"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill-badge"><i class="fab fa-docker"></i> Docker</div>
+                <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="skill-badge"><i class="fas fa-database"></i> PostgreSQL</div>
+            </div>
+        </section>
+
+        <!-- GitHub Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-controls">
+                <input type="text" id="search-bar" placeholder="Search projects...">
+            </div>
+            <div id="repos-container" class="repos-container">
+                <!-- GitHub repos will be injected here -->
+            </div>
+        </section>
+
+        <!-- GitHub Stats Section -->
+        <section id="github-stats">
+            <h2>GitHub Stats</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api?username=nikodiani1234-debug&show_icons=true&theme=transparent&hide_border=true&title_color=var(--accent-color)&text_color=var(--text-color)&icon_color=var(--accent-color)" alt="GitHub Stats">
+                </div>
+                <div class="stat-card">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nikodiani1234-debug&layout=compact&theme=transparent&hide_border=true&title_color=var(--accent-color)&text_color=var(--text-color)" alt="Top Languages">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>My Blog</h2>
+            <div class="blog-container">
+                <article class="blog-post">
+                    <h3><a href="#">My Journey into Web Development</a></h3>
+                    <p class="post-meta">Published on October 4, 2025</p>
+                    <p>A brief look into how I started my career in tech and the lessons I've learned along the way...</p>
+                    <a href="#" class="btn-secondary">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3><a href="#">10 Essential JavaScript Tips</a></h3>
+                    <p class="post-meta">Published on September 15, 2025</p>
+                    <p>Discover some of my favorite tips and tricks for writing cleaner and more efficient JavaScript code...</p>
+                    <a href="#" class="btn-secondary">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <!-- CUSTOMIZE: Your social media links -->
+                <a href="https://github.com/nikodiani1234-debug" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/niko-diani-5a22bb268/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:nikodiani1234@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nikodiani. All rights reserved.</p>
+    </footer>
+
+    <!-- CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
